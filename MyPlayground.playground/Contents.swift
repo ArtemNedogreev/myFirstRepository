@@ -26,5 +26,4 @@ print("Server message is \(server200status.description)")
 // --Вывел в консоль--///////
 
 print("Hello World")
-print("Heyy")
-
+print("111")
