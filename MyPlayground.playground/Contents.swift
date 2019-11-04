@@ -24,3 +24,5 @@ print("Server message is \(server200status.description)")
 print("Server status is \(server200status.statusCode)")
 print("Server message is \(server200status.description)")
 // --Вывел в консоль--///////
+
+print("Hello World")
