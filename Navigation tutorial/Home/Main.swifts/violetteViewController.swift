@@ -21,7 +21,10 @@ class violetteViewController: UIViewController {
 
     }
    
+    // в теле экшена вызываем метод НавКонтроллера возвращающай нас на первый рут экран
     @IBAction func homeButton(_ sender: UIButton) {
+        
+        // вот он на кое где намотан
         
         navigationController?.popToRootViewController(animated: true)
         
