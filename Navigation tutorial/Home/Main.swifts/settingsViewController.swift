@@ -26,6 +26,7 @@ class settingsViewController: UIViewController {
         // Присваеваем ей значения константы, содаржащей данные текстового поля
         violetVCreate.textFromSettings = text
         
+        // Проим НавКонтроллер переместить нас в ВьюКонтроллер присвоенный константе violetVCreate
         navigationController?.pushViewController(violetVCreate, animated: true)
         
     }
