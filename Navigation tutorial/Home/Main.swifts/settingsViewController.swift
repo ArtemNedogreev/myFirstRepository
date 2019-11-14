@@ -20,10 +20,13 @@ class settingsViewController: UIViewController {
         let violetVCreate = storyboard?.instantiateViewController(withIdentifier: "violetteViewController") as! violetteViewController
         
         //Забираем в константу данные из текстфилда методом text
+        
         let text = textField.text
         
-        // Обращаемся к константе, которая инициализировала фиолетовый экран. Вызываем через точку ПЕРЕМЕННУЮ НАХОДЯЩУЮСЯ НА violetteViewController.
+        // Обращаемся кконстанте, которая инициализировала фиолетовый экран. Вызываем через точку ПЕРЕМЕННУЮ НАХОДЯЩУЮСЯ НА violetteViewController.
+        
         // Присваеваем ей значения константы, содаржащей данные текстового поля
+        
         violetVCreate.textFromSettings = text
         
         // Проим НавКонтроллер переместить нас в ВьюКонтроллер присвоенный константе violetVCreate
@@ -32,3 +35,8 @@ class settingsViewController: UIViewController {
     }
     
 }
+
+
+
+
+// ересь ересь тест
