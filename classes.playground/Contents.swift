@@ -52,4 +52,64 @@ alsoTenEighty.frameRate = 30.0
 
 //print(tenEighty.frameRate)
 
+struct Observer {
+    
+    var name: String {
+        
+        willSet{
+            print("Name want to be change to \(newValue)")
+        }
+        
+        didSet{
+            
+            print("\(oldValue) was removed")
+            
+            if name != "" {
+                
+                name = name.capitalized
+                
+            } else {
+                
+                print("Type something")
+                
+            }
+        }
+    }
+}
 
+var obser = Observer(name: "Artem")
+
+obser.name // Getter
+obser.name = "Tema" // Setter
+obser.name = "dima"
+
+//print(obser)
+
+// Свойство вычисления
+
+struct CalcComp {
+    
+    var firstName: String {
+        didSet {
+            
+        firstName = firstName.capitalized
+            
+        }
+    }
+    
+    var lastName: String
+    
+    var fullName: String {
+        get {
+            return firstName + " " + lastName
+        }
+        set {
+            //print("You can set new value here!")
+        }
+    }
+}
+
+
+let calculator = CalcComp(firstName: "Artem", lastName: "Nedogreev")
+
+calculator.fullName
