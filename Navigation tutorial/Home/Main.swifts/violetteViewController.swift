@@ -17,7 +17,7 @@ class violetteViewController: UIViewController {
         super.viewDidLoad()
         
         // Заголовку присваевается значение переменной, принявшей данные из текстового поля экрана settingsViewController
-        title = textFromSettings
+//        title = textFromSettings
 
     }
    
